@@ -25,15 +25,6 @@ public class DiagonalsSum {
         int secondSum = 0;
 
         for (int i = 0; i < n; i++) {
-            mainSum = mainSum + matrix[i][i];
-            secondSum = secondSum + matrix[i][n - 1 - i];
-        }
-
-        int total = mainSum + secondSum;
-
-        if (n % 2 == 1) {
-            total = total - matrix[n / 2][n / 2];
-        }
 
         System.out.println("Main Diagonal Sum = " + mainSum);
         System.out.println("Secondary Diagonal Sum = " + secondSum);
